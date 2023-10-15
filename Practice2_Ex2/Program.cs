@@ -6,25 +6,15 @@
 
 System.Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int n;
-if (number > 99 && number < 1000)
+
+if (number > 99)
 {
-    n = number % 10;
-    System.Console.WriteLine($"Третья цифра числа: {n}");
-}
-else if (number < 99)
-{
-    System.Console.WriteLine("Третьей цифры нет");
-}
-else if (number > 999)
-{
-    int N;
-    int i = 0;
-    while (i < 3)
+    while (number > 999)
     {
-        number = number / 10;
-        i++;
+        number /= 10;
     }
-    N = number % 10;
-    System.Console.WriteLine(N);
+    System.Console.WriteLine($"Третья цифра числа: {number % 10}");
 }
+else
+    System.Console.WriteLine("Третьей цифры нет");
+
