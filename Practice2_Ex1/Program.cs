@@ -6,11 +6,11 @@
 
 System.Console.Write("Введите трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int n;
+
 if (number > 99 && number < 1000)
 {
-    n = (number / 10) % 10;
-    System.Console.WriteLine($"Вторая цифра числа: {n}");
+    number = (number / 10) % 10;
+    System.Console.WriteLine($"Вторая цифра числа: {number}");
 }
 else 
 {
