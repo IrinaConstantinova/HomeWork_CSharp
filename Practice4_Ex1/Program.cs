@@ -39,7 +39,7 @@ int FindPower(int number, int powerNumber)
     return result;
 }
 
-int number = EnterNumbers("Введите число: "); // обращение к матоду ввода чисел с консоли
+int number = EnterNumbers("Введите число: "); // обращение к методу ввода чисел с консоли
 int powerNumber = EnterNumbers("Введите степень числа: ");
 // int pow = FindPower(number, powerNumber);
 // System.Console.WriteLine(pow);
