@@ -18,7 +18,7 @@ double[] GenerateNumArray(int length, double maxRan, double minRan)
 void PrintArray(double[] arrayForPrint)  
 {
     
-    Console.WriteLine("[" + string.Join(", ", arrayForPrint) + "]");
+    Console.WriteLine("[" + string.Join("\t", arrayForPrint) + "]");
 }
 
 double FindMax(double[] array)
@@ -43,7 +43,7 @@ double FindMin(double[] array)
 
 double DifferenceMaxMin(double[] array)
 {
-    double difference = FindMax(array) - FindMin(array);
+    double difference = Math.Round(FindMax(array) - FindMin(array), 2);
     return difference;
 }
 
